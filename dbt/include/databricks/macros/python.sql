@@ -39,7 +39,6 @@ else:
 writer = (
     df.write
         .mode("overwrite")
-        .option("overwriteSchema", "true")
 {{ py_get_writer_options()|indent(8, True) }}
 )
 
