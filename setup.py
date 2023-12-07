@@ -54,7 +54,7 @@ setup(
     packages=find_namespace_packages(include=["dbt", "dbt.*"]),
     include_package_data=True,
     install_requires=[
-        "dbt-spark==1.7.1",
+        "dbt-spark @ git+https://github.com/mrk-its/dbt-spark@python_ephemeral_refs",
         "databricks-sql-connector>=2.9.3, <3.0.0",
         "databricks-sdk>=0.9.0",
         "keyring>=23.13.0",
